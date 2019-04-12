@@ -9,6 +9,7 @@ class Carousel {
         this.currentIndex = 1;
 
         this.leftBtn.addEventListener("click", () => this.imageLeft());
+        this.rightBtn.addEventListener("click", () => this.imageRight());
     }
 
     imageLeft() {
@@ -16,6 +17,22 @@ class Carousel {
             this.currentIndex = 4;
         } else {
             this.currentIndex--;
+        }
+
+        this.carouselImages.forEach(img => {img.style.display = "none"});
+        this.carouselImages.forEach(img => {
+            if (img.dataset.index == this.currentIndex) {
+                img.style.display = "flex";
+            }
+        });
+
+    }
+
+    imageRight() {
+        if (this.currentIndex == 4) {
+            this.currentIndex = 1;
+        } else {
+            this.currentIndex++;
         }
 
         this.carouselImages.forEach(img => {img.style.display = "none"});

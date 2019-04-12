@@ -32,13 +32,27 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+The DOM is an interface between the HTML and CSS and the browser.
+You can interact with the DOM through Javasscript.
+
 2. What is an event?
+
+An event is an interaction between the user and the website that trigeers a 
+response.
 
 3. What is an event listener?
 
+An event listener is a functionality that does something whenever an 
+event is triggered.
+
 4. Why would we convert a NodeList into an Array?
 
+If you need to map it, for example.
+
 5. What is a component?
+
+A component is a reusable piece of code that lets you more easily add and
+manage content in a website.
 
 ### Git Set up
 
